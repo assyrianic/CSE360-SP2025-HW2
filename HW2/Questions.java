@@ -7,7 +7,7 @@ public class Questions {
 	private ArrayList<String>
 		/// title of the question
 		titles,
-		                               
+		
 		/// the text of the question in detail
 		bodies
 	;

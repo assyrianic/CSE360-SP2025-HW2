@@ -24,6 +24,9 @@ public class BitSet {
 	
 	public void Push(int bitidx) {
 		final var slot = BitIdxToSlot(bitidx);
+		while( bset.size() <= slot ) {
+			bset.add(0);
+		}
 		SetBit(bitidx);
 		if( Integer.bitCount(bset.get(bset.size()-1)) > 30 ) {
 			bset.add(0);
